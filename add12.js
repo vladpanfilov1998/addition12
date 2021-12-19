@@ -40,7 +40,7 @@ fetch('https://jsonplaceholder.typicode.com/users')
                         <h5>Body: ${post.body}</h5>
                         `;
                                 let buttonR = document.createElement('button');
-                                buttonR.innerText = 'Click Comments';
+                                buttonR.innerText = 'ВИВЕСТИ КОМЕНТАРІ';
                                 buttonR.onclick = (id) => {
                                     fetch('https://jsonplaceholder.typicode.com/posts/' + post.id + '/comments')
                                         .then(response => response.json())
